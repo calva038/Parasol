@@ -8,15 +8,17 @@ public class CharacterAnimation : MonoBehaviour {
 	bool facingRight = true;
 
 	Animator anim;
+	PlayerMovement player;
 
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
+		player = GetComponent<PlayerMovement>();
 	}
 	
 	void FixedUpdate(){
 
-		// anim.SetBool("Ground", );
+		 anim.SetBool("Ground", player.isGrounded());
 
 
 		float move = Input.GetAxisRaw("Horizontal");

@@ -1,12 +1,10 @@
 fileFormatVersion: 2
-guid: 143ebebff4aaafa4492e201cfe4b97a7
+guid: 35eb11ba8d0c39044b3736484af04051
 TextureImporter:
   fileIDToRecycleName:
-    21300000: walkin (2)_0
-    21300002: walkin (2)_1
-    21300004: walkin (2)_2
-    21300006: walkin (2)_3
-    21300008: walkin (2)_4
+    21300000: jumping_0
+    21300002: jumping_1
+    21300004: jumping_3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -41,7 +39,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -89,33 +87,33 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walkin (2)_0
+      name: jumping_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 146
-        width: 329
-        height: 571
+        x: 209
+        y: 121
+        width: 272
+        height: 526
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 1, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72963b6d49cfddc49a1627b3c5058f97
+      spriteID: 840e8129b4af7f04698ee71495508527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkin (2)_1
+      name: jumping_1
       rect:
         serializedVersion: 2
-        x: 486
-        y: 155
-        width: 329
-        height: 565
+        x: 583
+        y: 106
+        width: 274
+        height: 511
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,19 +121,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88270a305b1078d488dad9cfeb266421
+      spriteID: 456ac2b5eaf1c284286a351692528390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkin (2)_2
+      name: jumping_3
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 129
-        width: 331
-        height: 582
+        x: 974
+        y: 223
+        width: 273
+        height: 559
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,47 +141,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff042c472157c324b8f8d6a24f54e4a6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkin (2)_3
-      rect:
-        serializedVersion: 2
-        x: 1555
-        y: 131
-        width: 330
-        height: 578
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7bdbb41d2dcc614c93be9e3ffb8097c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkin (2)_4
-      rect:
-        serializedVersion: 2
-        x: 2062
-        y: 105
-        width: 338
-        height: 618
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3929fe27c06b0749b73f62bd91ce2e2
+      spriteID: cc8f814d4362e4b4782a7043f09de4f2
       vertices: []
       indices: 
       edges: []
@@ -191,7 +149,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 94adb9a7aa031be43a48df8379d4e8e7
+    spriteID: 88f4569cfa820ba42ad4f6020bf5e276
     vertices: []
     indices: 
     edges: []
