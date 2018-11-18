@@ -16,12 +16,13 @@ public class playerAttack : MonoBehaviour {
 	void Awake()
 	{
 		anim = gameObject.GetComponent<Animator>();
-		//attackTrigger.enable = false;
+
+		attackTrigger.enabled = false;
 	}
 
 	void Update()
 	{
-		if (Input.GetKeyDown("f") && !attacking)
+		if (Input.GetKeyDown(KeyCode.F) && !attacking)
 		{
 			attacking = true;
 			attackTimer = attackCd;
