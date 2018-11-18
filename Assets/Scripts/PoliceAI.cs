@@ -25,10 +25,16 @@ public class PoliceAI : MonoBehaviour {
 	public Transform hitPointLeft;
 	public Transform hitPointRight;
 
+	private Vector2 velocity;
+	public float gravity = -20;
+	private Controller2D controller;
+	bool facingRight = true;
+
 
 	void Awake()
 	{
 		anim = gameObject.GetComponent<Animator>();
+		controller = gameObject.GetComponent<Controller2D>();
 	}
 
 	void Start()
@@ -38,8 +44,9 @@ public class PoliceAI : MonoBehaviour {
 
 	void Update()
 	{
-		anim.SetBool("Awake", awake);
-		anim.SetBool("LookingRight", lookingRight);
+		velocity.y += gravity * Time.deltaTime;
+		//anim.SetBool("Awake", awake);
+		//anim.SetBool("LookingRight", lookingRight);
 
 		RangeCheck();
 
@@ -53,6 +60,18 @@ public class PoliceAI : MonoBehaviour {
 			lookingRight = false;
 		}
 
+		if (lookingRight == true)
+		{
+			velocity.x = 2 ;
+
+		}
+
+
+		else
+		{
+			velocity.x = -2;
+		}
+		controller.Move(velocity * Time.deltaTime);
 
 	}
 
@@ -76,6 +95,21 @@ public class PoliceAI : MonoBehaviour {
 		if (curHealth <= 0 )
 		{
 			Destroy(gameObject);
+		}
+	}
+	void Flip(){
+		facingRight = !facingRight;
+		Vector3 theScale = transform.localScale;
+		theScale.x *= - 1;
+		transform.localScale = theScale;
+	}
+	void FixedUpdate()
+	{
+		if(velocity.x > 0 &&!facingRight){
+			Flip();
+		}
+		else if(velocity.x < 0 && facingRight){
+			Flip();
 		}
 	}
 
