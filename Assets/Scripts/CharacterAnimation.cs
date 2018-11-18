@@ -7,6 +7,7 @@ public class CharacterAnimation : MonoBehaviour {
 	public float maxSpeed = 5f;
 	bool facingRight = true;
 	bool skippableAnimation = true;
+	bool repeat = false;
 
 	Animator anim;
 	PlayerMovement player;
@@ -40,6 +41,22 @@ public class CharacterAnimation : MonoBehaviour {
 		Vector3 theScale = transform.localScale;
 		theScale.x *= - 1;
 		transform.localScale = theScale;
+	}
+
+	void pokeRepeatCheck() {
+		if (Input.GetKeyDown(KeyCode.F)) {
+			repeat = true;
+		}
+	}
+
+	void pokeRepeat() {
+		if (Input.GetKeyDown(KeyCode.F)) {
+			repeat = true;
+		}
+		if (repeat) {
+			anim.Play("poke_repeat");
+			repeat = false;
+		}
 	}
 }
 

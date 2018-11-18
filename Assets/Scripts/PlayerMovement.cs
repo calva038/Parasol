@@ -39,6 +39,8 @@ public class PlayerMovement : MonoBehaviour {
 			velocity.y = jumpVelocity;
 			animator.SetTrigger("Jump");
 		}
+		if(Input.GetKeyDown(KeyCode.F))
+			animator.SetTrigger("Attack");
 		targetVelX = input.x * moveSpeed;
 		if(input.x == 0) {
 			velocity.x = Mathf.SmoothDamp(velocity.x, targetVelX, ref velXSmoothing, xVelocitySmoothTime);
