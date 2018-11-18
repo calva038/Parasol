@@ -109,10 +109,10 @@ public class PoliceAI : MonoBehaviour {
 
 
 
-	//public void Damage(int damage)
-	//{
+	public void Damage(int damage)
+	{
 
-	//	curHealth -= damage;
+	curHealth -= damage;
 	//	gameObject.GetComponent<Animation>().Play("Player_RedFlash");
-	//}
+	}
 }
