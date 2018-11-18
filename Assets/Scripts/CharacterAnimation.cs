@@ -6,6 +6,7 @@ public class CharacterAnimation : MonoBehaviour {
 
 	public float maxSpeed = 5f;
 	bool facingRight = true;
+	bool skippableAnimation = true;
 
 	Animator anim;
 	PlayerMovement player;
@@ -18,13 +19,13 @@ public class CharacterAnimation : MonoBehaviour {
 	
 	void FixedUpdate(){
 
-		 anim.SetBool("Ground", player.isGrounded());
+		anim.SetBool("Ground", player.isGrounded());
 
 
 		float move = Input.GetAxisRaw("Horizontal");
 
 		anim.SetFloat("Speed", Mathf.Abs(move));  //abs is used incase we move in the opposite direction so -1 = 1
-
+		anim.SetBool("MoveButtons", move != 0);
 
 		if(move > 0 &&!facingRight){
 			Flip();

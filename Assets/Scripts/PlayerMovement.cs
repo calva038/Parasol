@@ -14,8 +14,10 @@ public class PlayerMovement : MonoBehaviour {
 	private float velXSmoothing = 0;
 
 	private Controller2D controller;
+	private Animator animator;
 
 	void Start() {
+		animator = GetComponent<Animator>();
 		controller = GetComponent<Controller2D>();
 	}
 
@@ -35,6 +37,7 @@ public class PlayerMovement : MonoBehaviour {
 		}
 		if(jumpPressed && col.below) {
 			velocity.y = jumpVelocity;
+			animator.SetTrigger("Jump");
 		}
 		targetVelX = input.x * moveSpeed;
 		if(input.x == 0) {
