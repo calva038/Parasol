@@ -7,4 +7,11 @@ public class PlayerStats : MonoBehaviour {
 	//stats 
 	public int curHealth; 
 	public int maxHealth;
+
+
+	void Update()
+	{
+		if (curHealth <= 0)
+			gameObject.SetActive(false);
+	}
 }

@@ -739,6 +739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1164545816}
   - component: {fileID: 1164545817}
+  - component: {fileID: 1164545818}
   m_Layer: 0
   m_Name: HitPointLeft
   m_TagString: Untagged
@@ -783,10 +784,21 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2.662809, y: 2.2229683}
-      - {x: -2.7367625, y: -0.72131133}
-      - {x: 0.9809002, y: -0.04548812}
+    - - {x: -0.32235909, y: 0.73053575}
+      - {x: -0.34336162, y: -0.9012501}
+      - {x: 1.0020807, y: -0.9451816}
       - {x: 0.9862045, y: 0.6076157}
+--- !u!114 &1164545818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1164545815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a8a5b8e8a8266409d8b0e55ac8e38e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1238008807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,6 +1362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1832916065}
   - component: {fileID: 1832916066}
+  - component: {fileID: 1832916067}
   m_Layer: 0
   m_Name: HitPointRight
   m_TagString: Untagged
@@ -1395,6 +1408,17 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.9147549, y: 0.02464509}
-      - {x: 3.473157, y: -0.8472502}
-      - {x: 3.4412098, y: 1.9175043}
+      - {x: -0.9782967, y: -0.83270955}
+      - {x: 0.37020826, y: -0.8684199}
+      - {x: 0.274719, y: 0.7955334}
+--- !u!114 &1832916067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1832916064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a8a5b8e8a8266409d8b0e55ac8e38e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

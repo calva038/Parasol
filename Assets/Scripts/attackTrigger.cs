@@ -8,9 +8,8 @@ public class attackTrigger : MonoBehaviour {
 
 
 
-	void OnTriggerStay2D(Collider2D col)
+	void OnTriggerEnter2D(Collider2D col)
 	{
-		Debug.Log("lol");
 
 		if (col.isTrigger != true )
 		{
