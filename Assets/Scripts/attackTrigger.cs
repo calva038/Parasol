@@ -4,14 +4,22 @@ using UnityEngine;
 
 public class attackTrigger : MonoBehaviour {
 
-	public int dmg = 20;
+	public int dmg = 1;
 
-	void OnTriggerEnter2D(Collider2D col)
+
+
+	void OnTriggerStay2D(Collider2D col)
 	{
+		Debug.Log("lol");
 
-		if (col.isTrigger != true && col.CompareTag("Enemy"))
+		if (col.isTrigger != true )
 		{
-			col.SendMessageUpwards("damage", dmg);
+			
+
+			PoliceAI enemy = col.gameObject.GetComponent<PoliceAI>();
+			enemy.curHealth -= 1;
+
+
 		}
 	}
 }

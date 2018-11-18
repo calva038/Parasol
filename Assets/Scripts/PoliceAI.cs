@@ -73,6 +73,10 @@ public class PoliceAI : MonoBehaviour {
 			awake = false;
 
 		}
+		if (curHealth <= 0 )
+		{
+			Destroy(gameObject);
+		}
 	}
 
 	public void Attack(bool attackingRight)
@@ -103,15 +107,12 @@ public class PoliceAI : MonoBehaviour {
 		}
 	}
 
-	//if (curHealth <= 0 )
-	//{
-	//	Destroy(gameObject);
-	//}
+
 
 	public void Damage(int damage)
 	{
 
-		curHealth -= damage;
-		gameObject.GetComponent<Animation>().Play("Player_RedFlash");
+	curHealth -= damage;
+	//	gameObject.GetComponent<Animation>().Play("Player_RedFlash");
 	}
 }
