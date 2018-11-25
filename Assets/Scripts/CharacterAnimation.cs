@@ -2,61 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(CharacterPhysics2D))]
 public class CharacterAnimation : MonoBehaviour {
 
-	public float maxSpeed = 5f;
-	bool facingRight = true;
-	bool skippableAnimation = true;
-	bool repeat = false;
+	protected bool facingRight = true;
 
-	Animator anim;
-	PlayerMovement player;
-
-	// Use this for initialization
-	void Start () {
-		anim = GetComponent<Animator>();
-		player = GetComponent<PlayerMovement>();
-	}
+	[SerializeField] protected CharacterPhysics2D characterPhysics;
 	
-	void FixedUpdate(){
-
-		anim.SetBool("Ground", player.isGrounded());
-
-
-		float move = Input.GetAxisRaw("Horizontal");
-
-		anim.SetFloat("Speed", Mathf.Abs(move));  //abs is used incase we move in the opposite direction so -1 = 1
-		anim.SetBool("MoveButtons", move != 0);
-
-		if(move > 0 &&!facingRight){
-			Flip();
-		}
-		else if(move < 0 && facingRight){
+	protected virtual void Update(){
+		if(characterPhysics.Velocity.x > 0 != facingRight){
 			Flip();
 		}
 	}
 
-	void Flip(){
+	protected void Flip(){
 		facingRight = !facingRight;
 		Vector3 theScale = transform.localScale;
 		theScale.x *= - 1;
 		transform.localScale = theScale;
-	}
-
-	void pokeRepeatCheck() {
-		if (Input.GetKeyDown(KeyCode.F)) {
-			repeat = true;
-		}
-	}
-
-	void pokeRepeat() {
-		if (Input.GetKeyDown(KeyCode.F)) {
-			repeat = true;
-		}
-		if (repeat) {
-			anim.Play("poke_repeat");
-			repeat = false;
-		}
 	}
 }
 

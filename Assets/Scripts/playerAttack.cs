@@ -2,52 +2,62 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerAttack : MonoBehaviour {
+[RequireComponent (typeof (Animator))]
+public class PlayerAttack : MonoBehaviour {
 
-	private bool attacking = false;
+	[SerializeField] private float attackDuration = 0.3f;
+	[SerializeField] private Collider2D attackTrigger;
 
+	[Header("Audio")]
+	[SerializeField] private AudioSource audio;
+	[SerializeField] private List<AudioClip> swingSounds;
+
+	private AttackState attackState = AttackState.NOT_ATTACKING;
 	private float attackTimer = 0;
-	private float attackCd = 0.3f;
-
-	public Collider2D attackTrigger;
-
 	private Animator anim;
 
-	void Awake()
-	{
-		anim = gameObject.GetComponent<Animator>();
+	private void OnValidate () {
+		attackDuration = Mathf.Clamp (attackDuration, 0, int.MaxValue);
+	}
 
+	private void Awake () {
+		anim = gameObject.GetComponent<Animator> ();
 		attackTrigger.enabled = false;
 	}
 
-	void Update()
-	{
-		if (Input.GetKeyDown(KeyCode.F) && !attacking)
-		{
-			attacking = true;
-			attackTimer = attackCd;
+	public enum AttackState {
+		ATTACKING,
+		NOT_ATTACKING
+	}
 
-			attackTrigger.enabled = true;
+	private void Update () {
+		switch (attackState) {
+			case (AttackState.ATTACKING):
+				if (attackTimer > 0) {
+					attackTimer -= Time.deltaTime;
+				} else {
+					attackTrigger.enabled = false;
+					attackState = AttackState.NOT_ATTACKING;
+				}
+				break;
 
+			case (AttackState.NOT_ATTACKING):
+				if (Input.GetKeyDown (KeyCode.F)) {
+					attackTimer = attackDuration;
+					attackTrigger.enabled = true;
+					attackState = AttackState.ATTACKING;
+
+					if(swingSounds.Count > 0) {
+						audio.PlayOneShot(swingSounds[Random.Range(0, swingSounds.Count)]);
+					}
+					
+				}
+				break;
+
+			default:
+				break;
 		}
 
-		if(attacking)
-		{
-			if (attackTimer > 0)
-			{
-				attackTimer -= Time.deltaTime;
-			}
-			else
-			{
-				attacking = false;
-				attackTrigger.enabled=false;
-			}
-		}
-
-		anim.SetBool("Attacking", attacking);
-
+		anim.SetBool ("Attacking", attackState == AttackState.ATTACKING);
 	}
 }
-
-
-
