@@ -11,7 +11,7 @@ public class CharacterMovement : MonoBehaviour {
 	[SerializeField] private float xVelocitySmoothTime = 0.5f;
 
 	[Header ("Audio")]
-	[SerializeField] private AudioSource audio;
+	[SerializeField] private new AudioSource audio;
 	[SerializeField] private List<AudioClip> jumpSounds;
 	[SerializeField] private AudioSource walkingAudio;
 

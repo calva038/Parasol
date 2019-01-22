@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneTimer : MonoBehaviour
 {
@@ -15,6 +16,6 @@ public class SceneTimer : MonoBehaviour
     {
 
         yield return new WaitForSeconds(waitbySecs);
-        Application.LoadLevel("Menu");
+        SceneManager.LoadScene("Menu");
     }
 }

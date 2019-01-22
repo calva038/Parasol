@@ -1343,6 +1343,11 @@ PrefabInstance:
       propertyPath: stopChaseDistance
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 82201197625138308, guid: 9744d6659e0d3004aa01988d3fec53c2,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9744d6659e0d3004aa01988d3fec53c2, type: 3}
 --- !u!1001 &328674732
@@ -4495,6 +4500,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f91b265835a50a4b929f4a3c3090287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
+  ignoreTags: []
 --- !u!61 &1238008810
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5612,6 +5619,11 @@ PrefabInstance:
       propertyPath: stopChaseDistance
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 82201197625138308, guid: 9744d6659e0d3004aa01988d3fec53c2,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d9c85e3742a3e374099f5f789dfc143d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9744d6659e0d3004aa01988d3fec53c2, type: 3}
 --- !u!1001 &1515791183
@@ -7404,6 +7416,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f35282d512c5a5543ae774ca836d4f81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackDuration: 0.15
+  attackTrigger: {fileID: 1238008810}
+  audio: {fileID: 567472241}
+  swingSounds:
+  - {fileID: 8300000, guid: ae27b98dbbd507a449fc80e76e0a605d, type: 3}
+  - {fileID: 8300000, guid: fe396171edb7b1842869c45cbf14d637, type: 3}
+  - {fileID: 8300000, guid: f9684d4c426c0b942920fad92eea88f0, type: 3}
+  - {fileID: 8300000, guid: 39135dbe76e847443bf7cd2da8d4b9be, type: 3}
 --- !u!114 &1832065993
 MonoBehaviour:
   m_ObjectHideFlags: 0

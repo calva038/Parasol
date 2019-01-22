@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthTing : MonoBehaviour {
 
 	public Animator animator;
-	public AudioSource audio;
+	public new AudioSource audio;
 	private bool collected = false;
 
 	void OnTriggerEnter2D(Collider2D other) {

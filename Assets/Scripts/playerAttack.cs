@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,7 +9,7 @@ public class PlayerAttack : MonoBehaviour {
 	[SerializeField] private Collider2D attackTrigger;
 
 	[Header("Audio")]
-	[SerializeField] private AudioSource audio;
+	[SerializeField] private new AudioSource audio;
 	[SerializeField] private List<AudioClip> swingSounds;
 
 	private AttackState attackState = AttackState.NOT_ATTACKING;
@@ -48,7 +48,7 @@ public class PlayerAttack : MonoBehaviour {
 					attackState = AttackState.ATTACKING;
 
 					if(swingSounds.Count > 0) {
-						audio.PlayOneShot(swingSounds[Random.Range(0, swingSounds.Count)]);
+						audio.PlayOneShot(swingSounds[UnityEngine.Random.Range(0, swingSounds.Count)]);
 					}
 					
 				}

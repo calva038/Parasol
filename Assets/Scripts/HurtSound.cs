@@ -5,7 +5,7 @@ using UnityEngine;
 public class HurtSound : MonoBehaviour {
 
 	[SerializeField] private Damageable damageable;
-	[SerializeField] private AudioSource audio;
+	[SerializeField] private new AudioSource audio;
 	[SerializeField] private List<AudioClip> hurtSounds;
 
 	void Start () {

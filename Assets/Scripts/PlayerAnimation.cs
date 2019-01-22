@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAnimation : CharacterAnimation {
 
-	private bool skippableAnimation = true;
+	//private bool skippableAnimation = true;
 	private bool repeat = false;
 
 	[SerializeField] private Animator anim;
@@ -21,13 +21,13 @@ public class PlayerAnimation : CharacterAnimation {
 
 	}
 
-	private void pokeRepeatCheck () {
+	private void PokeRepeatCheck () {
 		if (Input.GetKeyDown (KeyCode.F)) {
 			repeat = true;
 		}
 	}
 
-	private void pokeRepeat () {
+	private void PokeRepeat () {
 		if (Input.GetKeyDown (KeyCode.F)) {
 			repeat = true;
 		}
