@@ -1348,6 +1348,11 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 82201197625138308, guid: 9744d6659e0d3004aa01988d3fec53c2,
+        type: 3}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9744d6659e0d3004aa01988d3fec53c2, type: 3}
 --- !u!1001 &328674732
@@ -7905,7 +7910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f35282d512c5a5543ae774ca836d4f81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDuration: 0.15
+  attackDuration: 0.3
   attackTrigger: {fileID: 1238008810}
   audio: {fileID: 567472241}
   swingSounds:

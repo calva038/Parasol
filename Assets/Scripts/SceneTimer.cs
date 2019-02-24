@@ -8,7 +8,7 @@ public class SceneTimer : MonoBehaviour
     void Start()
     {
 
-        StartCoroutine(loadSceneAfterDelay(10));
+        StartCoroutine(loadSceneAfterDelay(5));
 
     }
 
@@ -16,6 +16,6 @@ public class SceneTimer : MonoBehaviour
     {
 
         yield return new WaitForSeconds(waitbySecs);
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Disclaimer");
     }
 }

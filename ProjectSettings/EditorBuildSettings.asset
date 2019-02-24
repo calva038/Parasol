@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Logo.unity
     guid: f75488372608ed34a9afeb940b382cbc
   - enabled: 1
+    path: Assets/Scenes/Disclaimer.unity
+    guid: 9b38a1362c74fac4f99cd239c1db2f14
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: fd9445032babaad4ea553c06cf26bb9d
   - enabled: 1
