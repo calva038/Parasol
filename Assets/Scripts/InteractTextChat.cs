@@ -33,6 +33,22 @@ public class InteractTextChat : MonoBehaviour
         Time.timeScale = 0;
         AudioListener.pause = true;
         CharacterSpeaking.SetActive(true);
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            ParserXML.whichConvo = 0;
+        }
+        else if (Input.GetKeyDown(KeyCode.L))
+        {
+            ParserXML.whichConvo = 1;
+        }
+        else if (Input.GetKeyDown(KeyCode.K))
+        {
+            ParserXML.whichConvo = 2;
+        }
+        else if (Input.GetKeyDown(KeyCode.J))
+        {
+            ParserXML.whichConvo = 3;
+        }
     }
     public void DeactivateMenu()
     {

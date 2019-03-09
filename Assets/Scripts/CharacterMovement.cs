@@ -30,8 +30,14 @@ public class CharacterMovement : MonoBehaviour {
 	private float xInput;
 	private float yInput;
 
-	private void Update () {
+    public float knockback;
+    public float knockbackLength;
+    public static double isDamaged;
+    public static double knockbackCount;
+    public static bool knockFromRight;
 
+    private void Update () {
+        
 		// Collision info
 		CharacterPhysics2D.CollisionInfo col = Physics.Collisions;
 
@@ -51,24 +57,47 @@ public class CharacterMovement : MonoBehaviour {
 		}
 
 		Vector2 input = DirectionalInput;
+        if (isDamaged > 0)
+        {
+            isDamaged -= Time.deltaTime;
+        }
+        if (knockbackCount <= 0)
+        {
+            // Walking sound
+            if (input.x != 0 && col.below) {
+		    	if (!walkingAudio.isPlaying) {
+			    	walkingAudio.Play ();
+		    	}
+	    	}
+            else {
+			    walkingAudio.Stop ();
+	    	}
 
-		// Walking sound
-		if (input.x != 0 && col.below) {
-			if (!walkingAudio.isPlaying) {
-				walkingAudio.Play ();
-			}
-		} else {
-			walkingAudio.Stop ();
-		}
-
-		// Horizontal velocity smoothing (if no player input is detected)
-		targetVelX = input.x * moveSpeed;
-		if (input.x == 0) {
-			velocity.x = Mathf.SmoothDamp (velocity.x, targetVelX, ref velXSmoothing, xVelocitySmoothTime);
-		} else {
-			velocity.x = targetVelX;
-		}
-
+            // Horizontal velocity smoothing (if no player input is detected)
+            targetVelX = input.x * moveSpeed;
+            if (input.x == 0)
+            {
+                velocity.x = Mathf.SmoothDamp(velocity.x, targetVelX, ref velXSmoothing, xVelocitySmoothTime);
+            }
+            else
+            {
+                velocity.x = targetVelX;
+            }
+        }
+        else
+        {
+            if (knockFromRight)
+            {
+                velocity.x = -knockback;
+                velocity.y = knockback/2;
+            }
+            else
+            {
+                velocity.x = knockback;
+                velocity.y = knockback/2;
+            }
+            knockbackCount -= Time.deltaTime;
+        }
 		// Gravity
 		velocity += gravityScale * Physics2D.gravity * Time.deltaTime;
 

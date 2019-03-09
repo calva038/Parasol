@@ -68,7 +68,6 @@ public class PoliceAI : MonoBehaviour {
 
 		distance = Vector3.Distance (transform.position, target.transform.position);
 		float xDist = Mathf.Abs(target.position.x - transform.position.x);
-
 		switch (currentAIState) {
 			case AIState.Patrolling:
 				// Movement
@@ -86,7 +85,7 @@ public class PoliceAI : MonoBehaviour {
 					movingRight = false;
 				} else if ((col.left || transform.position.x < patrolMinX) && !movingRight) {
 					movingRight = true;
-				}
+                }
 				FaceMovementDir ();
 
 				// Next state
@@ -96,9 +95,16 @@ public class PoliceAI : MonoBehaviour {
 				break;
 
 			case AIState.Chasing:
-				
-				// Chase player as long as player is in range
-				if (ExclusiveBetween (xDist, 0.1f, wakeRange)) {
+                if (facingRight)
+                {
+                    CharacterMovement.knockFromRight = false;
+                }
+                else
+                {
+                    CharacterMovement.knockFromRight = true;
+                }
+                // Chase player as long as player is in range
+                if (ExclusiveBetween (xDist, 0.1f, wakeRange)) {
 					velocity.x = (transform.position.x < target.position.x) ? chaseSpeed : -chaseSpeed;
 					anim.SetBool("Walking", true);
 				}

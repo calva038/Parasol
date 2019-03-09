@@ -1,23 +1,18 @@
 fileFormatVersion: 2
-guid: dbfd24998b0d2df4a9dff141b6532b84
+guid: 9952122c2a0ac6447a5f6c924c03db7f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: lilyattack_15
-    21300002: lilyattack_14
-    21300004: lilyattack_13
-    21300006: lilyattack_12
-    21300008: lilyattack_11
-    21300010: lilyattack_10
-    21300012: lilyattack_9
-    21300014: lilyattack_8
-    21300016: lilyattack_7
-    21300018: lilyattack_6
-    21300020: lilyattack_5
-    21300022: lilyattack_4
-    21300024: lilyattack_3
-    21300026: lilyattack_2
-    21300028: lilyattack_1
-    21300030: lilyattack_0
+    21300000: lilyattack 2_0
+    21300002: lilyattack 2_1
+    21300004: lilyattack 2_2
+    21300006: lilyattack 2_3
+    21300008: lilyattack 2_4
+    21300010: lilyattack 2_5
+    21300012: lilyattack 2_6
+    21300014: lilyattack 2_7
+    21300016: lilyattack 2_8
+    21300018: lilyattack 2_9
+    21300020: lilyattack 2_10
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -61,7 +56,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 175
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,321 +95,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lilyattack_15
+      name: lilyattack 2_0
       rect:
         serializedVersion: 2
-        x: 152
+        x: 7582
+        y: 366
+        width: 782
+        height: 1043
+      alignment: 9
+      pivot: {x: 0.43326905, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57dce07b34b0cfe42b2f9f3f5d915392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilyattack 2_1
+      rect:
+        serializedVersion: 2
+        x: 6625
+        y: 372
+        width: 734
+        height: 1025
+      alignment: 9
+      pivot: {x: 0.34991074, y: 0.47171602}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302f1d7e924b7cc4fb0ffa3e38c8d698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilyattack 2_2
+      rect:
+        serializedVersion: 2
+        x: 5496
+        y: 360
+        width: 867
+        height: 1004
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0619edaf5f104d9409c1ed9360a38375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilyattack 2_3
+      rect:
+        serializedVersion: 2
+        x: 5496
         y: 363
-        width: 790
-        height: 1049
+        width: 862
+        height: 996
       alignment: 9
-      pivot: {x: 0.4489308, y: 0.49999988}
+      pivot: {x: 0.19730867, y: 0.5058215}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17d5fc3ab2b9fef438f43ded135d1200
+      spriteID: b220f203bc605114fa98d12ffc93188f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lilyattack_14
+      name: lilyattack 2_4
       rect:
         serializedVersion: 2
-        x: 1281
-        y: 384
-        width: 819
-        height: 1041
+        x: 4157
+        y: 370
+        width: 1309
+        height: 1013
       alignment: 9
-      pivot: {x: 0.42610902, y: 0.50553644}
+      pivot: {x: 0.1810755, y: 0.50572366}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 089c420136f033e429cc3647ae4f99c2
+      spriteID: fb53a786452cff64dbec5a41ba1f780c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lilyattack_13
+      name: lilyattack 2_5
       rect:
         serializedVersion: 2
-        x: 2381
-        y: 384
-        width: 847
+        x: 4154
+        y: 369
+        width: 1315
+        height: 1016
+      alignment: 9
+      pivot: {x: 0.19575845, y: 0.49429303}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61cdfbfd7e12514f88c8b57958fa831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilyattack 2_6
+      rect:
+        serializedVersion: 2
+        x: 4162
+        y: 370
+        width: 1309
+        height: 1013
+      alignment: 9
+      pivot: {x: 0.19661732, y: 0.5147535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab87e7307274434d8391f6eb5f74dce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilyattack 2_7
+      rect:
+        serializedVersion: 2
+        x: 4159
+        y: 370
+        width: 1309
+        height: 1013
+      alignment: 9
+      pivot: {x: 0.1943639, y: 0.5114474}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e6cac80c4a9d3448a163fbcc2e02dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilyattack 2_8
+      rect:
+        serializedVersion: 2
+        x: 2857
+        y: 369
+        width: 996
+        height: 1046
+      alignment: 9
+      pivot: {x: 0.29624724, y: 0.49999982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebe9b3f31355924aafbd3c5f0d7b08e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilyattack 2_9
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 366
+        width: 846
         height: 1028
       alignment: 9
-      pivot: {x: 0.37668133, y: 0.5056063}
+      pivot: {x: 0.28068194, y: 0.5169208}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3f1f924675fbeb47961aa422c478790
+      spriteID: 33186b9dbcf62e241be85e78c93cd702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lilyattack_12
+      name: lilyattack 2_10
       rect:
         serializedVersion: 2
-        x: 3495
-        y: 388
-        width: 879
-        height: 1016
-      alignment: 9
-      pivot: {x: 0.3801714, y: 0.50850874}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d54663e914cc2c5409cbf6ffd46d86be
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lilyattack_11
-      rect:
-        serializedVersion: 2
-        x: 4576
-        y: 355
-        width: 1005
+        x: 513
+        y: 360
+        width: 793
         height: 1049
       alignment: 9
-      pivot: {x: 0.3715378, y: 0.51455986}
+      pivot: {x: 0.43419424, y: 0.4889453}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45115ee9c7f2c4c47946f302dae4e498
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lilyattack_10
-      rect:
-        serializedVersion: 2
-        x: 5665
-        y: 359
-        width: 1082
-        height: 1017
-      alignment: 9
-      pivot: {x: 0.33886537, y: 0.5085006}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d9146344d30007419e44a295e2553e1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lilyattack_9
-      rect:
-        serializedVersion: 2
-        x: 6755
-        y: 356
-        width: 1134
-        height: 1008
-      alignment: 9
-      pivot: {x: 0.34382752, y: 0.49056515}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bdc56dc7eace9d4ba2b12f65263e948
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lilyattack_8
-      rect:
-        serializedVersion: 2
-        x: 7941
-        y: 361
-        width: 1043
-        height: 1015
-      alignment: 9
-      pivot: {x: 0.35038462, y: 0.5046844}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de32bdceca8bef74cb637faa7b16de90
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lilyattack_7
-      rect:
-        serializedVersion: 2
-        x: 9063
-        y: 371
-        width: 984
-        height: 1017
-      alignment: 9
-      pivot: {x: 0.36206055, y: 0.515018}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30e01e9a6c7ba264a85e5c3ecc442938
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lilyattack_6
-      rect:
-        serializedVersion: 2
-        x: 10394
-        y: 363
-        width: 872
-        height: 1005
-      alignment: 9
-      pivot: {x: 0.37838215, y: 0.50759864}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69d1d50daaa67824f850aa4d87d5f329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lilyattack_5
-      rect:
-        serializedVersion: 2
-        x: 11475
-        y: 363
-        width: 868
-        height: 1009
-      alignment: 9
-      pivot: {x: 0.37665948, y: 0.49814323}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28fd4c8ee35a55748a41f83e3bc38bf5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lilyattack_4
-      rect:
-        serializedVersion: 2
-        x: 12637
-        y: 361
-        width: 747
-        height: 1032
-      alignment: 9
-      pivot: {x: 0.29213208, y: 0.49999994}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72ec73ae09ea43348bce60434c2374a9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lilyattack_3
-      rect:
-        serializedVersion: 2
-        x: 13856
-        y: 373
-        width: 724
-        height: 1016
-      alignment: 9
-      pivot: {x: 0.3151478, y: 0.5103526}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89add213d9f7d2b408c70713723fee34
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lilyattack_2
-      rect:
-        serializedVersion: 2
-        x: 14888
-        y: 337
-        width: 791
-        height: 1044
-      alignment: 9
-      pivot: {x: 0.39403123, y: 0.5227598}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68f874eeae32413459443c8253dc170a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lilyattack_1
-      rect:
-        serializedVersion: 2
-        x: 15943
-        y: 349
-        width: 795
-        height: 1047
-      alignment: 9
-      pivot: {x: 0.40357703, y: 0.5072938}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f045518d9a758d54f8b70b31a120d001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lilyattack_0
-      rect:
-        serializedVersion: 2
-        x: 17071
-        y: 362
-        width: 795
-        height: 1045
-      alignment: 9
-      pivot: {x: 0.44200078, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c501ce872410bba4294a84c049b2d49b
+      spriteID: 30ced77241b9e874389ce545fc47a386
       vertices: []
       indices: 
       edges: []
@@ -422,7 +317,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ad3b1320a74981c4c9737f6c0c4e63c1
+    spriteID: 8f6ea7581f0fb1e49bf1937dc32715e0
     vertices: []
     indices: 
     edges: []
