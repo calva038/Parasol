@@ -7,6 +7,7 @@ TextureImporter:
     21300004: lilywalk_2
     21300006: lilywalk_3
     21300008: lilywalk_4
+    21300010: lilyidle_0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -92,12 +93,12 @@ TextureImporter:
       name: lilywalk_0
       rect:
         serializedVersion: 2
-        x: 3689
-        y: 225
-        width: 586
-        height: 1132
+        x: 2842
+        y: 231
+        width: 614
+        height: 1135
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -112,12 +113,12 @@ TextureImporter:
       name: lilywalk_1
       rect:
         serializedVersion: 2
-        x: 2876
-        y: 234
-        width: 580
+        x: 2054
+        y: 240
+        width: 622
         height: 1120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -132,12 +133,12 @@ TextureImporter:
       name: lilywalk_2
       rect:
         serializedVersion: 2
-        x: 2087
-        y: 243
-        width: 586
-        height: 1114
+        x: 1130
+        y: 216
+        width: 610
+        height: 1150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,12 +153,12 @@ TextureImporter:
       name: lilywalk_3
       rect:
         serializedVersion: 2
-        x: 1155
-        y: 219
-        width: 586
-        height: 1147
+        x: 284
+        y: 228
+        width: 614
+        height: 1120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,9 +173,29 @@ TextureImporter:
       name: lilywalk_4
       rect:
         serializedVersion: 2
-        x: 308
+        x: 2054
+        y: 239
+        width: 622
+        height: 1121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62ba70d445bc4e47b4a48aff69a2e5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilyidle_0
+      rect:
+        serializedVersion: 2
+        x: 3652
         y: 225
-        width: 595
+        width: 623
         height: 1129
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -183,7 +204,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d62ba70d445bc4e47b4a48aff69a2e5c
+      spriteID: fc08fb1b3dd48bb46ab5edc8e73c925b
       vertices: []
       indices: 
       edges: []

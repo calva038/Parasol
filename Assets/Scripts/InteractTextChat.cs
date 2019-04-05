@@ -8,7 +8,7 @@ public class InteractTextChat : MonoBehaviour
     public static bool inConversation;
     private void Update()
     {
-        if (Snowcone.canTalk)
+        if (Snowcone.canTalk | Snowcone3D.canTalk3D)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {

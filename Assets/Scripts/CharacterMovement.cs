@@ -22,7 +22,8 @@ public class CharacterMovement : MonoBehaviour {
 		set { physics = value; }
 	}
 
-	private Vector2 velocity;
+	public Vector2 velocity;
+    public Vector2 velocityHolder;
 	private float targetVelX = 0;
 	private float velXSmoothing = 0;
 
@@ -36,10 +37,14 @@ public class CharacterMovement : MonoBehaviour {
     public static double knockbackCount;
     public static bool knockFromRight;
 
+    public GameObject hubWorld;
+    public bool isHub;
+
     private void Update () {
         
-		// Collision info
-		CharacterPhysics2D.CollisionInfo col = Physics.Collisions;
+
+        // Collision info
+        CharacterPhysics2D.CollisionInfo col = Physics.Collisions;
 
 		// 0 vertical velocity when character is squeezed between a floor and ceiling
 		if ((col.above) || (col.below)) {
@@ -102,7 +107,17 @@ public class CharacterMovement : MonoBehaviour {
 		velocity += gravityScale * Physics2D.gravity * Time.deltaTime;
 
 		// Move the character
-		Physics.Velocity = velocity;
+        if (isHub)
+        {
+            hubWorld.transform.Rotate(0, -velocity.x/100, 0);
+            velocityHolder.x = 0;
+            velocityHolder.y = velocity.y/2;
+            Physics.Velocity = velocityHolder;
+        }
+        else
+        {
+            Physics.Velocity = velocity;
+        }
 
 		// Clear flags
 		jumpActivated = false;

@@ -5,26 +5,26 @@
       <Lily>
         <Conversation>
           <Section>
-            <Option>Stay on screen 1</Option>
-            <Option>Go to screen 2</Option>
+            <Option>Stay Happy</Option>
+            <Option>Be Sad</Option>
             <Option>Go to screen 3</Option>
             <Option>Go to screen 4</Option>
           </Section>
           <Section>
-            <Option>Back to screen 1</Option>
-            <Option>Stay here at screen 2</Option>
+            <Option>Be Happy again</Option>
+            <Option>Stay Sad</Option>
             <Option>Transition to screen 3</Option>
             <Option>Transition to screen 4</Option>
           </Section>
           <Section>
-            <Option>Rewind to screen 1</Option>
-            <Option>Enter screen 2</Option>
+            <Option>Be Happy</Option>
+            <Option>Be Sad</Option>
             <Option>Maintain position at screen 3</Option>
             <Option>Enter screen 4</Option>
           </Section>
           <Section>
-            <Option>Start over at screen 1</Option>
-            <Option>This way to screen 2</Option>
+            <Option>Be Happy</Option>
+            <Option>Be Sad</Option>
             <Option>This way screen 3</Option>
             <Option>Stay on screen 4</Option>
           </Section>

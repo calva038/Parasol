@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/Main_Paul.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Logo.unity
     guid: f75488372608ed34a9afeb940b382cbc
@@ -21,6 +18,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: fd9445032babaad4ea553c06cf26bb9d
   - enabled: 1
+    path: Assets/Scenes/World_Map.unity
+    guid: 7803c324647e36c478140fb85cb2a014
+  - enabled: 1
     path: Assets/Scenes/Main_Paul2.unity
     guid: fcdc3de52340c0b458e360cff12ff5c5
+  - enabled: 1
+    path: Assets/Scenes/Hub_World.unity
+    guid: 2a4a48fb10c9c114c9b19199e9106105
+  - enabled: 1
+    path: Assets/Scenes/Shop_Interior.unity
+    guid: f96d649e25be6944f9c2ee40c01a11ed
   m_configObjects: {}
