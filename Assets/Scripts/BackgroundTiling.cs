@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class BackgroundTiling : MonoBehaviour
 {
-    public int offsetX = 2;
+    public int offsetX = 1;
     public bool hasARightTile = false;
     public bool hasALeftTile = false;
     public bool reverseScale = false;
@@ -38,11 +38,13 @@ public class BackgroundTiling : MonoBehaviour
             {
                 MakeNewTitle(1);
                 hasARightTile = true;
+                hasALeftTile = false;
             }
             else if (cam.transform.position.x <= edgeVisiblePositionLeft + offsetX && hasALeftTile == false)
             {
                 MakeNewTitle(-1);
                 hasALeftTile = true;
+                hasARightTile = false;
             }
         }
     }

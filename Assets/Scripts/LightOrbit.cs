@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class LightOrbit : MonoBehaviour
 {
-    Vector3 testLilyLocation = new Vector3(3.2f, -6.02f, -0.26f);
+    Vector3 testLilyLocation;
+    Vector3 testLilyLocationOld;
+    Vector3 offset;
+
     void Update()
     {
+        testLilyLocation = GameObject.FindGameObjectWithTag("Player").transform.position;
         // Spin the object around the world origin at 20 degrees/second.
         transform.RotateAround(testLilyLocation, Vector3.back, 100 * Time.deltaTime);
     }

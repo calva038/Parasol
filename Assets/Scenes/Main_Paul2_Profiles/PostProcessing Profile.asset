@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
   - {fileID: 114239939846485626}
-  - {fileID: 114046142312651808}
   - {fileID: 114918488690953376}
   - {fileID: 114545088539776724}
   - {fileID: 114489285241293562}
@@ -57,43 +56,6 @@ MonoBehaviour:
     value: 0.5
   vignette:
     overrideState: 0
-    value: 0.5
---- !u!114 &114046142312651808
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a34fa72bd4185749832024e9c8010bf, type: 3}
-  m_Name: ScreenSpaceReflections
-  m_EditorClassIdentifier: 
-  active: 1
-  enabled:
-    overrideState: 1
-    value: 1
-  preset:
-    overrideState: 1
-    value: 2
-  maximumIterationCount:
-    overrideState: 1
-    value: 16
-  resolution:
-    overrideState: 1
-    value: 0
-  thickness:
-    overrideState: 1
-    value: 8
-  maximumMarchDistance:
-    overrideState: 1
-    value: 100
-  distanceFade:
-    overrideState: 1
-    value: 0.5
-  vignette:
-    overrideState: 1
     value: 0.5
 --- !u!114 &114151086768047242
 MonoBehaviour:
@@ -2744,7 +2706,7 @@ MonoBehaviour:
     value: 1
   mode:
     overrideState: 1
-    value: 0
+    value: 1
   intensity:
     overrideState: 1
     value: 1.15
@@ -2990,7 +2952,7 @@ MonoBehaviour:
   active: 1
   enabled:
     overrideState: 1
-    value: 1
+    value: 0
   shutterAngle:
     overrideState: 1
     value: 100
