@@ -11,24 +11,34 @@ public class PlayerMovementController : MonoBehaviour {
     public GameObject grenadePrefab;
     public float throwForce = 40f;
     public bool isHub;
+    public bool isPaused;
 
     // Update is called once per frame
     void Update () {
-		float xInput = Input.GetAxisRaw (horizontalInputAxis);
-		float yInput = Input.GetAxisRaw (verticalInputAxis);
-		Vector2 input = new Vector2 (xInput, yInput);
-
-		movement.DirectionalInput = input;
-
-		if (Input.GetButtonDown (jumpButton)) {
-			movement.Jump();
-		}
-
-        bool grenadePressed = Input.GetKeyDown(KeyCode.R);
-        //Grenade Throwing
-        if (grenadePressed && !isHub)
+        if (!isPaused)
         {
-            ThrowGrenade();
+            float xInput = Input.GetAxisRaw(horizontalInputAxis);
+            float yInput = Input.GetAxisRaw(verticalInputAxis);
+            Vector2 input = new Vector2(xInput, yInput);
+
+            movement.DirectionalInput = input;
+
+            if (Input.GetButtonDown(jumpButton))
+            {
+                movement.Jump();
+            }
+
+            bool grenadePressed = Input.GetKeyDown(KeyCode.R);
+            //Grenade Throwing
+            if (grenadePressed && !isHub)
+            {
+                ThrowGrenade();
+            }
+        }
+        else
+        {
+            movement.DirectionalInput = new Vector2(0,0);
+            Vector2 input = new Vector2(0, 0);
         }
     }
 

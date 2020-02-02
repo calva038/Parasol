@@ -1,14 +1,24 @@
 fileFormatVersion: 2
 guid: f9a7605bb8ae59442971866f286132de
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: PoliceAttacking_0
-    21300002: PoliceAttacking_1
-    21300004: PoliceAttacking_2
-    21300006: PoliceAttacking_4
-    21300008: PoliceAttacking_5
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: PoliceAttacking_0
+  - first:
+      213: 21300002
+    second: PoliceAttacking_1
+  - first:
+      213: 21300004
+    second: PoliceAttacking_2
+  - first:
+      213: 21300006
+    second: PoliceAttacking_4
+  - first:
+      213: 21300008
+    second: PoliceAttacking_5
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -115,6 +125,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a837f56c3b0ff874aaee345418782eab
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -135,6 +146,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fe69f7ef3ecd404439ba37d8c6ca11ae
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -155,6 +167,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ebadd67c162ee214aa2e017767bcba36
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -175,6 +188,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6e4d0e8573579ae4ea52665c47949956
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -195,6 +209,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 63c45c0f26a1df441a8a714efc4c0794
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -203,10 +218,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 08e8d510a892be14dbbefa2786f4be41
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

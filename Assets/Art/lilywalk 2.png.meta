@@ -1,12 +1,18 @@
 fileFormatVersion: 2
 guid: 99fbd41f2d3770446ac0078daa8af42b
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: lilywalk 2_0
-    21300002: lilywalk 2_1
-    21300004: lilywalk 2_2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: lilywalk 2_0
+  - first:
+      213: 21300002
+    second: lilywalk 2_1
+  - first:
+      213: 21300004
+    second: lilywalk 2_2
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -124,6 +130,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ef28e5a992a06b34fa880ca78be4cdd0
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -144,6 +151,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8af02d6d93a58c249bc5d1712568c810
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -164,6 +172,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 64f9cbc311736574ba2feaa74012eb07
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -172,10 +181,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 3d6a8468c036ef54d935cab6f9e0212e
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

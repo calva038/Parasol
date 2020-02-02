@@ -1,12 +1,18 @@
 fileFormatVersion: 2
 guid: 75ac64ffb5873eb4892fb82e8992853c
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: EV coin_0
-    21300002: EV coin_1
-    21300004: EV coin_2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: EV coin_0
+  - first:
+      213: 21300002
+    second: EV coin_1
+  - first:
+      213: 21300004
+    second: EV coin_2
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -113,6 +119,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1944fe623c238e8489f1b4afafabef88
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -133,6 +140,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a5de56e0d2a1652419c679c54b424684
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -153,6 +161,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 258026c94acac0747b117773b0e32f07
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -161,10 +170,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 06d249ce30a7c9c4e8a28914a68fafc1
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

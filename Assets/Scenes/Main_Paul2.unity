@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 19778125}
   - component: {fileID: 19778126}
   m_Layer: 0
-  m_Name: chair
+  m_Name: Chair 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1704,7 +1704,7 @@ GameObject:
   - component: {fileID: 172241790}
   - component: {fileID: 172241791}
   m_Layer: 0
-  m_Name: volleyball
+  m_Name: Volleyball Net
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1722,7 +1722,7 @@ Transform:
   m_LocalScale: {x: 0.66, y: 0.66, z: 1.2}
   m_Children: []
   m_Father: {fileID: 1864880935}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &172241791
 SpriteRenderer:
@@ -2362,6 +2362,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212409322424345382, guid: 9744d6659e0d3004aa01988d3fec53c2,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 114718799383554990, guid: 9744d6659e0d3004aa01988d3fec53c2,
         type: 3}
       propertyPath: target
@@ -2386,11 +2391,6 @@ PrefabInstance:
         type: 3}
       propertyPath: BypassEffects
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 212409322424345382, guid: 9744d6659e0d3004aa01988d3fec53c2,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9744d6659e0d3004aa01988d3fec53c2, type: 3}
@@ -3681,6 +3681,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 212409322424345382, guid: 9744d6659e0d3004aa01988d3fec53c2,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 114718799383554990, guid: 9744d6659e0d3004aa01988d3fec53c2,
         type: 3}
       propertyPath: target
@@ -3705,11 +3710,6 @@ PrefabInstance:
         type: 3}
       propertyPath: stopChaseDistance
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 212409322424345382, guid: 9744d6659e0d3004aa01988d3fec53c2,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9744d6659e0d3004aa01988d3fec53c2, type: 3}
@@ -4748,7 +4748,7 @@ GameObject:
   - component: {fileID: 715364332}
   - component: {fileID: 715364333}
   m_Layer: 0
-  m_Name: sandpile
+  m_Name: Sand Pile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4954,7 +4954,7 @@ SpriteRenderer:
   m_Size: {x: 9.12, y: 15.02}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &736666391 stripped
@@ -8308,7 +8308,7 @@ GameObject:
   - component: {fileID: 1244965516}
   - component: {fileID: 1244965517}
   m_Layer: 0
-  m_Name: shells_0
+  m_Name: Shell 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8326,7 +8326,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1864880935}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1244965517
 SpriteRenderer:
@@ -8436,7 +8436,7 @@ GameObject:
   - component: {fileID: 1254387071}
   - component: {fileID: 1254387072}
   m_Layer: 0
-  m_Name: shells_1
+  m_Name: Shell 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8454,7 +8454,7 @@ Transform:
   m_LocalScale: {x: 0.66, y: 0.66, z: 1}
   m_Children: []
   m_Father: {fileID: 1864880935}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1254387072
 SpriteRenderer:
@@ -8745,7 +8745,7 @@ SpriteRenderer:
   m_Size: {x: 94.89001, y: 45.13}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1291967657
@@ -10254,6 +10254,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 212409322424345382, guid: 9744d6659e0d3004aa01988d3fec53c2,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 114718799383554990, guid: 9744d6659e0d3004aa01988d3fec53c2,
         type: 3}
       propertyPath: target
@@ -10284,11 +10289,6 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: d9c85e3742a3e374099f5f789dfc143d, type: 3}
-    - target: {fileID: 212409322424345382, guid: 9744d6659e0d3004aa01988d3fec53c2,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 19
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9744d6659e0d3004aa01988d3fec53c2, type: 3}
 --- !u!1001 &1515791183
@@ -10334,6 +10334,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 212409322424345382, guid: 9744d6659e0d3004aa01988d3fec53c2,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 114718799383554990, guid: 9744d6659e0d3004aa01988d3fec53c2,
         type: 3}
       propertyPath: target
@@ -10358,11 +10363,6 @@ PrefabInstance:
         type: 3}
       propertyPath: stopChaseDistance
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 212409322424345382, guid: 9744d6659e0d3004aa01988d3fec53c2,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9744d6659e0d3004aa01988d3fec53c2, type: 3}
@@ -12042,6 +12042,7 @@ MonoBehaviour:
   ObjectwithImage: {fileID: 1683063292}
   Expression1: {fileID: 2800000, guid: e4caeee31b25ac746a7725342207d46f, type: 3}
   Expression2: {fileID: 2800000, guid: 9e7b0e7fc0392014bafbb1983f19e4c0, type: 3}
+  Expression3: {fileID: 2800000, guid: 08be03e38d696604eb37962169507f4a, type: 3}
 --- !u!4 &1683121958 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4711354215520390, guid: 28ab51d515b9ce842b48482fe0316ed2,
@@ -12827,6 +12828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1832065985}
   characterPhysics: {fileID: 1832065981}
+  isPaused: 0
 --- !u!114 &1832065988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12859,6 +12861,7 @@ MonoBehaviour:
     type: 3}
   throwForce: 40
   isHub: 0
+  isPaused: 0
 --- !u!50 &1832065990
 Rigidbody2D:
   serializedVersion: 4
@@ -13211,10 +13214,10 @@ Transform:
   - {fileID: 442369282}
   - {fileID: 169104145}
   - {fileID: 400316135}
-  - {fileID: 2022896548}
-  - {fileID: 172241790}
   - {fileID: 1244965516}
   - {fileID: 1254387071}
+  - {fileID: 2022896548}
+  - {fileID: 172241790}
   - {fileID: 715364332}
   - {fileID: 1878017179}
   - {fileID: 19778125}
@@ -14032,7 +14035,7 @@ GameObject:
   - component: {fileID: 2022896548}
   - component: {fileID: 2022896549}
   m_Layer: 0
-  m_Name: shells_2
+  m_Name: Starfish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14050,7 +14053,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1864880935}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2022896549
 SpriteRenderer:

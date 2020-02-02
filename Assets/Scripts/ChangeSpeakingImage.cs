@@ -8,6 +8,7 @@ public class ChangeSpeakingImage : MonoBehaviour
     public RawImage ObjectwithImage;
     public Texture Expression1;
     public Texture Expression2;
+    public Texture Expression3;
 
     void Start()
     {
@@ -23,6 +24,10 @@ public class ChangeSpeakingImage : MonoBehaviour
         else if (ParserXML.whichConvo == 1)
         {
             ObjectwithImage.texture = Expression2;
+        }
+        else if (ParserXML.whichConvo == 2)
+        {
+            ObjectwithImage.texture = Expression3;
         }
     }
 }
